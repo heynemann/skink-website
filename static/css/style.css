@@ -1,26 +1,26 @@
-html
+* 
 {
-    height: 100%;
+    margin:0;
+    padding:0;
+    border:0;
 }
 
-body
+.tapume 
 {
-    background-image: url("../images/skink.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background:url(imgs/tapume.jpg) no-repeat center top;
+    margin:0 auto;
+    height:500px;
+    width:550px;
+    position:relative;
 }
 
-p
+.tapume .git-code 
 {
+    color:#00ff00;
+    font-size:15px;
+    position:absolute;
+    bottom:65px;
+    left:0;
+    width:550px;
     text-align:center;
-    font-family: helvetica;
-    font-size: 13px;
-    color: #a0a0a0;
-}
-
-pre{
-    text-align:center;
-    background-color: #3C3C3C;
-    color: gainsboro;
 }
