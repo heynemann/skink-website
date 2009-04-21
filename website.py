@@ -6,11 +6,7 @@ import sys
 
 import cherrypy
 
-class HelloWorld(object):
-    @cherrypy.expose
-    def index(self):
-        yield "The current time is %s<br />" % time.ctime()
-        yield "A <a href='static/test.txt'>static file</a> served by Apache."
+from controllers import *
 
 def start():
     appconf = {
@@ -23,7 +19,7 @@ def start():
                             'server.socket_port':8087
                             })
 
-    cherrypy.quickstart(HelloWorld(), '/', appconf)
+    cherrypy.quickstart(IndexController(), '/', appconf)
     
     return 0
 

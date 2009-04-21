@@ -1,0 +1,19 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    background-image: url("../images/skink.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+p
+{
+    font-family: helvetica;
+    font-size: 13px;
+    color: #c0c0c0;
+}
